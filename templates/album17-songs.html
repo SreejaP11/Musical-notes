@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>SONGS PAGE</title>
+     <head>
+      <link rel="stylesheet" href="../static/index.css">
+  
+  </head>
+  <body class="body">
+    <nav>
+      <ul class="nav">
+        <li><a  href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a class="active" href="artists.html">ARTISTS</a></li> 
+        <li><a href="search.html">SEARCH</a></li>
+        <li><a href="artist_spotlight.html">ARTIST SPOTLIGHT</a></li>
+        <li><a href="playlist.html">PLAYLIST</a></li>
+      </ul>
+    </nav>
+    <img src="../static/musicalnotes.jpeg" width="100%" height="400">
+    
+    <div class="wrapper">
+    <div class="header">
+      <img class="header-image" src="../static/eds.jpeg" alt="Profile Image">
+      <div class="header-text">LOOSE CHANGE</div>
+      <div class="header-artist">ED SHEERAN</div>
+    </div>
+    <div class="song-container">
+      <div class="song-box">
+        <img class="song-image" src="../static/lc.jpeg" alt="Song 1">
+        <div>
+          <div class="song-title">One Night</div>
+          
+          <div class="song-timestamp">3:26</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ED SHEERAN">
+            <input type="hidden" name="album" value="LOOSE CHANGE">
+            <input type="hidden" name="song" value="One Night">
+            <input type="hidden" name="url" value="3:26">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/lc.jpeg" alt="Song 2">
+        <div>
+          <div class="song-title">Homeless</div>
+          
+          <div class="song-timestamp">3:30</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ED SHEERAN">
+            <input type="hidden" name="album" value="LOOSE CHANGE">
+            <input type="hidden" name="song" value="Homeless">
+            <input type="hidden" name="url" value="3:30">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/lc.jpeg" alt="Song 3">
+        <div>
+          <div class="song-title">Little Bird</div>
+          
+          <div class="song-timestamp">3:46</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ED SHEERAN">
+            <input type="hidden" name="album" value="LOOSE CHANGE">
+            <input type="hidden" name="song" value="Little Bird">
+            <input type="hidden" name="url" value="3:46">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/lc.jpeg" alt="Song 4">
+        <div>
+          <div class="song-title">Sofa</div>
+         
+          <div class="song-timestamp">3:19</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ED SHEERAN">
+            <input type="hidden" name="album" value="LOOSE CHANGE">
+            <input type="hidden" name="song" value="Sofa">
+            <input type="hidden" name="url" value="3:19">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/lc.jpeg" alt="Song 5">
+        <div>
+          <div class="song-title">The City</div>
+          <div class="song-timestamp">5:06</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ED SHEERAN">
+            <input type="hidden" name="album" value="LOOSE CHANGE">
+            <input type="hidden" name="song" value="The City">
+            <input type="hidden" name="url" value="5:06">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+    </div>
+    <footer>
+    
+      <p>Turn Up The Volume And Let The Music Speak</p>
+      <a href="about.html"><b>About</b></a>
+    </footer>
+    
+  </body>
+</html>  

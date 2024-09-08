@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>SONGS PAGE</title>
+   
+      <link rel="stylesheet" href="../static/index.css">
+  
+  </head>
+  <body class="body">
+    <nav>
+      <ul class="nav">
+        <li><a  href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a class="active" href="artists.html">ARTISTS</a></li> 
+        <li><a href="search.html">SEARCH</a></li>
+        <li><a href="artist_spotlight.html">ARTIST SPOTLIGHT</a></li>
+        <li><a href="playlist.html">PLAYLIST</a></li>
+      </ul>
+    </nav>
+    <img src="../static/musicalnotes.jpeg" width="100%" height="400">
+    
+    <div class="wrapper">
+    <div class="header">
+      <img class="header-image" src="../static/swift.jpeg" alt="Profile Image">
+      <div class="header-text">LOVER</div>
+      <div class="header-artist">TAYLOR SWIFT</div>
+    </div>
+    <div class="song-container">
+      <div class="song-box">
+        <img class="song-image" src="../static/ME.jpeg" alt="Song 1">
+        <div>
+          <div class="song-title">ME!</div>
+          <!-- <form method="POST" action="{{ url_for('add') }}">
+            <input type="hidden" name="song" value="Song 1">
+            <input type="hidden" name="artist" value="Artist 1">
+            <input type="hidden" name="album" value="Album 1">
+            <input type="hidden" name="url" value="song1.mp3">
+            <button type="submit">Add to Playlist</button>
+        </form> -->
+          <div class="song-timestamp">3:13</div>
+          <!-- <button id="add1" action="/add__to_playlist" method="POST">Add to Playlist</button> -->
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <input type="hidden" name="album" value="LOVER">
+            <input type="hidden" name="song" value="ME!">
+            <input type="hidden" name="url" value="3:13">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/ithf.jpeg" alt="Song 2">
+        <div>
+          <div class="song-title">It's Nice To Have A Friend</div>
+          
+          <div class="song-timestamp">2:31</div>
+      
+          <!-- <button id="add1" action="/add__to_playlist" method="POST">Add to Playlist</button> -->
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <input type="hidden" name="album" value="LOVER">
+            <input type="hidden" name="song" value="It's Nice To Have A Friend">
+            <input type="hidden" name="url" value="2:31">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/afterglow.jpeg" alt="Song 3">
+        <div>
+          <div class="song-title">Afterglow</div>
+          
+          <div class="song-timestamp">3:43</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <input type="hidden" name="album" value="LOVER">
+            <input type="hidden" name="song" value="Afterglow">
+            <input type="hidden" name="url" value="3:43">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/better.jeog" alt="Song 4">
+        <div>
+          <div class="song-title">Soon You'll Get Better</div>
+         
+          <div class="song-timestamp">3:22</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <input type="hidden" name="album" value="LOVER">
+            <input type="hidden" name="song" value="Soon You'll Get Better">
+            <input type="hidden" name="url" value="3:22">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/he.jpeg" alt="Song 5">
+        <div>
+          <div class="song-title">I Think He Knows</div>
+          <div class="song-timestamp">2:53</div>
+        </div>
+         </div>
+         
+    </div>
+    
+    
+    <footer>
+    
+      <p>Turn Up The Volume And Let The Music Speak</p>
+      <a href="about.html"><b>About</b></a>
+    </footer>
+  </body>
+</html>  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iTunes Search Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+	<nav>
+        
+        <ul class="nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="artists.html">ARTISTS</a></li>
+        </ul>
+      </nav>
+	  <div style="padding-top: 50px;"></div>
+	<div class="search-container">
+		<h1>iTunes Search</h1>
+		<form>
+			<label for="search">Search for:</label>
+			<input type="text" id="search" name="search">
+			<button type="submit">Search</button>
+		</form>
+		<div id="filters">
+			<label for="duration">Duration (max in minutes):</label>
+			<input type="number" id="duration" name="duration" min="1" max="60">
+			<label for="explicit">Explicit content:</label>
+			<select id="explicit" name="explicit">
+				<option value="all">All</option>
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</select>
+			<button id="clear-filters" type="button">Clear Filters</button>
+		</div>
+		<div class="search-results">
+		</div>
+	</div>
+	<script src="../static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>SONGS PAGE</title>
+     <head>
+      <link rel="stylesheet" href="../static/index.css">
+  
+  </head>
+  <body class="body">
+    <nav>
+      <ul class="nav">
+        <li><a  href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a class="active" href="artists.html">ARTISTS</a></li> 
+        <li><a href="search.html">SEARCH</a></li>
+        <li><a href="artist_spotlight.html">ARTIST SPOTLIGHT</a></li>
+        <li><a href="playlist.html">PLAYLIST</a></li>
+      </ul>
+    </nav>
+    <img src="../static/musicalnotes.jpeg" width="100%" height="400">
+    
+    <div class="wrapper">
+    <div class="header">
+      <img class="header-image" src="../static/swift.jpeg" alt="Profile Image">
+      <div class="header-text">Reputation</div>
+      <div class="header-artist">TAYLOR SWIFT</div>
+    </div>
+    <div class="song-container">
+      <div class="song-box">
+        <img class="song-image" src="../static/rp.jpeg" alt="Song 1">
+        <div>
+          <div class="song-title">End Game</div>
+          
+          <div class="song-timestamp">4:04</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <input type="hidden" name="album" value="Reputation">
+            <input type="hidden" name="song" value="End Game">
+            <input type="hidden" name="url" value="4:04">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/rp.jpeg" alt="Song 2">
+        <div>
+          <div class="song-title">Don't Blame Me</div>
+          
+          <div class="song-timestamp">3:56</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <input type="hidden" name="album" value="Reputation">
+            <input type="hidden" name="song" value="Don't Blame Me">
+            <input type="hidden" name="url" value="3:56">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/rp.jpeg" alt="Song 3">
+        <div>
+          <div class="song-title">Delicate</div>
+          
+          <div class="song-timestamp">3:52</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <input type="hidden" name="album" value="Reputation">
+            <input type="hidden" name="song" value="Delicate">
+            <input type="hidden" name="url" value="3:52">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/rp.jpeg" alt="Song 4">
+        <div>
+          <div class="song-title">Dress</div>
+         
+          <div class="song-timestamp">3:50</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <input type="hidden" name="album" value="Reputation">
+            <input type="hidden" name="song" value="Dress">
+            <input type="hidden" name="url" value="3:50">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/rp.jpeg" alt="Song 5">
+        <div>
+          <div class="song-title">I Did Something Bad</div>
+          <div class="song-timestamp">3:58</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="Taylor Swift">
+            <input type="hidden" name="album" value="Reputation">
+            <input type="hidden" name="song" value="I Did Something Bad">
+            <input type="hidden" name="url" value="3:58">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+    </div>
+    <footer>
+    
+      <p>Turn Up The Volume And Let The Music Speak</p>
+      <a href="about.html"><b>About</b></a>
+    </footer>
+    
+  </body>
+</html>  

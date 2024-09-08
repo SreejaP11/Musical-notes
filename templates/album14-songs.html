@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>SONGS PAGE</title>
+     <head>
+      <link rel="stylesheet" href="../static/index.css">
+  
+  </head>
+  <body class="body">
+    <nav>
+      <ul class="nav">
+        <li><a  href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a class="active" href="artists.html">ARTISTS</a></li> 
+        <li><a href="search.html">SEARCH</a></li>
+        <li><a href="artist_spotlight.html">ARTIST SPOTLIGHT</a></li>
+        <li><a href="playlist.html">PLAYLIST</a></li>
+      </ul>
+    </nav>
+    <img src="../static/musicalnotes.jpeg" width="100%" height="400">
+    
+    <div class="wrapper">
+    <div class="header">
+      <img class="header-image" src="../static/one direction.jpeg" alt="Profile Image">
+      <div class="header-text">Up All Night</div>
+      <div class="header-artist">ONE DIRECTION</div>
+    </div>
+    <div class="song-container">
+      <div class="song-box">
+        <img class="song-image" src="../static/uan.png" alt="Song 1">
+        <div>
+          <div class="song-title">Save You Tonight</div>
+          
+          <div class="song-timestamp">3:24</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ONE DIRECTION">
+            <input type="hidden" name="album" value="Up All Night">
+            <input type="hidden" name="song" value="Save You Tonight">
+            <input type="hidden" name="url" value="3:24">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/uan.png" alt="Song 2">
+        <div>
+          <div class="song-title">I Want</div>
+          
+          <div class="song-timestamp">2:51</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ONE DIRECTION">
+            <input type="hidden" name="album" value="Up All Night">
+            <input type="hidden" name="song" value="I Want">
+            <input type="hidden" name="url" value="2:51">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/uan.png" alt="Song 3">
+        <div>
+          <div class="song-title">Tell Me A Lie</div>
+          
+          <div class="song-timestamp">3:16</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ONE DIRECTION">
+            <input type="hidden" name="album" value="Up All Night">
+            <input type="hidden" name="song" value="Tell Me A Lie">
+            <input type="hidden" name="url" value="3:16">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/uan.png" alt="Song 4">
+        <div>
+          <div class="song-title">Gotta Be You</div>
+         
+          <div class="song-timestamp">4:04</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ONE DIRECTION">
+            <input type="hidden" name="album" value="Up All Night">
+            <input type="hidden" name="song" value="Gotta Be You">
+            <input type="hidden" name="url" value="4:04">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/uan.png" alt="Song 5">
+        <div>
+          <div class="song-title">I wish</div>
+          <div class="song-timestamp">3:35</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ONE DIRECTION">
+            <input type="hidden" name="album" value="Up All Night">
+            <input type="hidden" name="song" value="I wish">
+            <input type="hidden" name="url" value="3:35">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+    </div>
+    <footer>
+    
+      <p>Turn Up The Volume And Let The Music Speak</p>
+      <a href="about.html"><b>About</b></a>
+    </footer>
+    
+  </body>
+</html>  

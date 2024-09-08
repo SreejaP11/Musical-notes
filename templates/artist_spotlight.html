@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Artist Name</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <style>
+      /* Define the initial size of the image */
+      img {
+        width: 300px;
+        height: 300px;
+      }
+      /* Style the rating radio buttons */
+      .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rating input[type="radio"] {
+        display: none;
+      }
+      .rating label {
+        font-size: 2rem;
+        color: gold;
+        cursor: pointer;
+      }
+      .rating input[type="radio"]:checked ~ label,
+.rating label:hover,
+ .rating label:hover ~ label {
+  color: gold; 
+} 
+
+
+
+      /* Style the review table */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 0.5rem;
+        border: 1px solid black;
+      }
+      th {
+        background-color: gray;
+        color: white;
+      }
+      td:nth-child(1),
+      td:nth-child(3) {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: black;color: white;">
+    <nav>
+        <ul class="nav">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="artists.html">ARTISTS</a></li> 
+        </ul>
+      </nav>
+      <div style="padding-top: 100px;"></div>
+    <h1>TAYLOR SWIFT</h1>
+    <img id="artist-img" src="../static/bad.jpeg" alt="Artist Name">
+    <br>
+    <br>
+    <span>Taylor Swift is a renowned American singer-songwriter and actress, known for her distinctively personal and relatable lyrics, catchy pop melodies, and a strong country music influence in her earlier work. She was born on December 13, 1989, in Reading, Pennsylvania, and started her music career as a country artist in Nashville, Tennessee, at the age of 14. Swift has released several successful albums, including "Fearless", "Speak Now", "Red", "1989", "Reputation", and "Lover", and has won numerous awards for her music, including multiple Grammys. In addition to her music career, Swift has also appeared in several films and TV shows, including "Valentine's Day", "The Giver", and "Cats".</span>
+    <div id="countdown"></div>
+    <h2>Leave a Review</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <fieldset class="rating">
+        <legend>Rating:</legend>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1" title="1 star">☆</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2" title="2 stars">☆</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3" title="3 stars">☆</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4" title="4 stars">☆</label>
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5" title="5 star">☆</label>
+      </fieldset>
+      
+      <br><br>
+      <label for="review">Review:</label><br>
+      <textarea id="review" name="review" required></textarea><br><br>
+      <button type="button" onclick="addReview()">Submit</button>
+    </form>
+    <h2>Reviews</h2>
+    <table id="review-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Rating</th>
+          <th>Review</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <script src="../static/animation.js"></script>
+    <script src="../static/script.js"></script>
+  </body>
+</html>

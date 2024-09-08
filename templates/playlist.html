@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playlist</title>
+    <link rel="stylesheet" href="../static/index.css">
+  </head>
+  <body>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a  href="artists.html">ARTISTS</a></li> 
+        <li><a href="search.html">SEARCH</a></li>
+        <li><a href="artist_spotlight.html">ARTIST SPOTLIGHT</a></li>
+        <li><a class="active" href="playlist.html">PLAYLIST</a></li>
+      </ul>
+    </nav>
+    <p style="margin-top: 100px;"></p>
+    <h1>Playlist</h1>
+    <div class="playlist-container">
+      {% for song in playlist %}
+      <div class="song-container">
+        <h2 class="song">{{ song[1] }}</h2>
+        <div class="song-details">      
+          <p><b>Artist:</b> {{ song[2] }}</p>
+          <p><b>Album:</b> {{ song[3] }}</p>
+          <p><b>Duration:</b> {{ song[4] }}</p>
+        </div>
+        <form method="POST" action="{{ url_for('remove', id=song[0]) }}">
+          <input type="hidden" name="_method" value="DELETE">
+          <button class="remove-button" type="submit">Remove</button>
+        </form>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>

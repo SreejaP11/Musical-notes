@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>SONGS PAGE</title>
+     <head>
+      <link rel="stylesheet" href="../static/index.css">
+  
+  </head>
+  <body class="body">
+    <nav>
+      <ul class="nav">
+        <li><a  href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a class="active" href="artists.html">ARTISTS</a></li> 
+        <li><a href="search.html">SEARCH</a></li>
+        <li><a href="artist_spotlight.html">ARTIST SPOTLIGHT</a></li>
+        <li><a href="playlist.html">PLAYLIST</a></li>
+      </ul>
+    </nav>
+    <img src="../static/musicalnotes.jpeg" width="100%" height="400">
+    
+    <div class="wrapper">
+    <div class="header">
+      <img class="header-image" src="../static/weeknd.jpeg" alt="Profile Image">
+      <div class="header-text">After Hours</div>
+      <div class="header-artist">WEEKND</div>
+    </div>
+    <div class="song-container">
+      <div class="song-box">
+        <img class="song-image" src="../static/ah.jpeg" alt="Song 1">
+        <div>
+          <div class="song-title">Save Your Tears</div>
+          
+          <div class="song-timestamp">3:36</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="WEEKND">
+            <input type="hidden" name="album" value="After Hours">
+            <input type="hidden" name="song" value="Save Your Tears">
+            <input type="hidden" name="url" value="3:36">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/ah.jpeg" alt="Song 2">
+        <div>
+          <div class="song-title">Blinding Lights</div>
+          
+          <div class="song-timestamp">3:20</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="WEEKND">
+            <input type="hidden" name="album" value="After Hours">
+            <input type="hidden" name="song" value="Blinding Lights">
+            <input type="hidden" name="url" value="3:20">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/ah.jpeg" alt="Song 3">
+        <div>
+          <div class="song-title">Too Late </div>
+          
+          <div class="song-timestamp">4:00</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="WEEKND">
+            <input type="hidden" name="album" value="After Hours">
+            <input type="hidden" name="song" value="Too Late">
+            <input type="hidden" name="url" value="4:00">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/ah.jpeg" alt="Song 4">
+        <div>
+          <div class="song-title">Scared to Live</div>
+         
+          <div class="song-timestamp">3:11</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="WEEKND">
+            <input type="hidden" name="album" value="After Hours">
+            <input type="hidden" name="song" value="Scared to Live">
+            <input type="hidden" name="url" value="3:11">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/ah.jpeg" alt="Song 5">
+        <div>
+          <div class="song-title">Faith</div>
+          <div class="song-timestamp">4:43</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="WEEKND">
+            <input type="hidden" name="album" value="After Hours">
+            <input type="hidden" name="song" value="Faith">
+            <input type="hidden" name="url" value="4:43">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+    </div>
+    <footer>
+    
+      <p>Turn Up The Volume And Let The Music Speak</p>
+      <a href="about.html"><b>About</b></a>
+    </footer> 
+  
+  </body>
+</html>  

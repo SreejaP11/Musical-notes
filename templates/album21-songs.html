@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>SONGS PAGE</title>
+     <head>
+      <link rel="stylesheet" href="../static/index.css">
+  
+  </head>
+  <body class="body">
+    <nav>
+      <ul class="nav">
+        <li><a  href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a class="active"  href="artists.html">ARTISTS</a></li> 
+        <li><a href="search.html">SEARCH</a></li>
+        <li><a href="artist_spotlight.html">ARTIST SPOTLIGHT</a></li>
+        <li><a href="playlist.html">PLAYLIST</a></li>
+      </ul>
+    </nav>
+    <img src="../static/musicalnotes.jpeg" width="100%" height="400">
+    
+    <div class="wrapper">
+    <div class="header">
+      <img class="header-image" src="../static/arianag.jpeg" alt="Profile Image">
+      <div class="header-text">SWEETNER</div>
+      <div class="header-artist">ARIANA GRANDE</div>
+    </div>
+    <div class="song-container">
+      <div class="song-box">
+        <img class="song-image" src="../static/st.jpeg" alt="Song 1">
+        <div>
+          <div class="song-title">R.E.M</div>
+          
+          <div class="song-timestamp">4:05</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ARIANA GRANDE">
+            <input type="hidden" name="album" value="SWEETNER">
+            <input type="hidden" name="song" value="R.E.M">
+            <input type="hidden" name="url" value="4:05">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/st.jpeg" alt="Song 2">
+        <div>
+          <div class="song-title">Sweetner</div>
+          
+          <div class="song-timestamp">3:28</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ARIANA GRANDE">
+            <input type="hidden" name="album" value="SWEETNER">
+            <input type="hidden" name="song" value="Sweetner">
+            <input type="hidden" name="url" value="3:28">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/st.jpeg" alt="Song 3">
+        <div>
+          <div class="song-title">Successful</div>
+          
+          <div class="song-timestamp">3:47</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ARIANA GRANDE">
+            <input type="hidden" name="album" value="SWEETNER">
+            <input type="hidden" name="song" value="Successful">
+            <input type="hidden" name="url" value="3:47">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/st.jpeg" alt="Song 4">
+        <div>
+          <div class="song-title">Everytime</div>
+         
+          <div class="song-timestamp">2:52</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ARIANA GRANDE">
+            <input type="hidden" name="album" value="SWEETNER">
+            <input type="hidden" name="song" value="Everytime">
+            <input type="hidden" name="url" value="2:52">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+      <div class="song-box">
+        <img class="song-image" src="../static/st.jpeg" alt="Song 5">
+        <div>
+          <div class="song-title">Breathin</div>
+          <div class="song-timestamp">3:18</div>
+          <form action="/add" method="POST">
+            <input type="hidden" name="artist" value="ARIANA GRANDE">
+            <input type="hidden" name="album" value="SWEETNER">
+            <input type="hidden" name="song" value="Breathin">
+            <input type="hidden" name="url" value="3:18">
+            <input type="submit" value="Add to Playlist">
+        </form>
+        
+        </div>
+      </div>
+    </div>
+    <footer>
+    
+      <p>Turn Up The Volume And Let The Music Speak</p>
+      <a href="about.html"><b>About</b></a>
+    </footer>
+    
+  </body>
+</html>  
